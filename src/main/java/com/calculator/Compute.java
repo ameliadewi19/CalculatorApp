@@ -10,20 +10,17 @@ public class Compute {
 
         switch (operator) {
             case "+":
-                System.out.println("Result: " + (a + b));
+                System.out.println("Result: " + Calculator.add(a, b));
                 break;
             case "-":
-                System.out.println("Result: " + (a - b));
+                System.out.println("Result: " + Calculator.subtract(a, b));
                 break;
             case "*":
-                System.out.println("Result: " + (a * b));
+                System.out.println("Result: " + Calculator.multiply(a, b));
                 break;
             case "/":
-                System.out.println("Result: " + ((double) a / b));
+                System.out.println("Result: " + Calculator.divide(a, b));
                 break;
-            default:
-                // Though we've already validated this, it's good practice to have a default case
-                System.out.println("Invalid operator. Only +, -, *, and / are allowed.");
         }
     }
 }
