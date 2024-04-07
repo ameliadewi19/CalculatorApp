@@ -1,4 +1,4 @@
-#CalculatorApp
+# CalculatorApp
 
 Aplikasi ini merupakan aplikasi kalkulator sederhana yang akan menerima dua input angka, lalu operator yang dipilih. Terdapat beberapa validasi yang dilakukan secara berurutan yaitu:
 1. nilai yang dihitung harus angka, tidak boleh karakter
