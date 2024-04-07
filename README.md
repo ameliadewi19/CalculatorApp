@@ -6,4 +6,4 @@ Aplikasi ini merupakan aplikasi kalkulator sederhana yang akan menerima dua inpu
 3. operator yang boleh diinputkan adalah +, -, * (kali) dan / (bagi)
 4. pada operasi pembagian, pembagi tidak boleh bernilai nol
    
-Jika validasi gagal maka sistem akan meminta ulang input yang sudah benar.
+Jika validasi gagal maka sistem akan menampilkan pesan error lalu program berhenti.
