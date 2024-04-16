@@ -16,7 +16,7 @@ Jika validasi gagal maka sistem akan menampilkan pesan error lalu program berhen
 ## Run Code
 1. Clone repository dengan git
    ```
-   git clone https://github.com/ameliadewi19/CalculatorApp
+   git clone https://github.com/ameliadewi19/CalculatorApp.git
    ```
 2. Buka projek melalui file explorer, lalu ketikan cmd pada kolom path
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/0d1af725-2f06-49df-a731-2ddb584b0f3d)
@@ -24,9 +24,21 @@ Jika validasi gagal maka sistem akan menampilkan pesan error lalu program berhen
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/d03f577d-eaa3-4f77-8498-7ed8b32c5e2e)
 4. Menginstall ekstensi java untuk mempermudah dalam running program
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/18aadf0d-d8e6-419d-96cf-106a77efc1cb)
-6. Klik kanan pada file src>main>java>com>calculator>MainApp.java, lalu tekan Run Java
+5. Klik kanan pada file src>main>java>com>calculator>MainApp.java, lalu tekan Run Java
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/bd774efa-4fca-4c9c-b02b-dbff4eac89c4)
-7. Masukan 2 angka yang dipisah spasi, lalu tekan enter
-9. Masukan operator yaitu +, -, * atau / lalu tekan enter
-    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/8dce75ac-ce93-4b87-88f6-94d3ae699988)
- 
+6. Masukan 2 angka yang dipisah spasi, lalu tekan enter
+7. Masukan operator yaitu +, -, * atau / lalu tekan enter
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/8dce75ac-ce93-4b87-88f6-94d3ae699988)
+
+## Run Automation Test
+1. Jalankan perintah berikut pada terminal
+   ```
+   mvn test
+   ```
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/03f0ce80-ccbe-490e-bf05-29af434b5e8e)
+2. Untuk melihat hasil report testing jalankan perintah berikut pada terminal
+   ```
+   mvn site
+   ```
+3. Buka hasil report pada target>site>surefire-report.html pada browser
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/c49dcf83-5395-4d8a-8a4c-776f2f881aa4)
