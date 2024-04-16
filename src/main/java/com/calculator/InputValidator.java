@@ -24,6 +24,6 @@ public class InputValidator {
 
     // Validate division by zero
     public static boolean isValidDivision(int divisor, String operator) {
-        return !(operator.equals("/") && divisor == 0);
+        return !(operator.equals("/") || divisor == 0);
     }
 }
