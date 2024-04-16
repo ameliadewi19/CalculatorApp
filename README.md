@@ -7,3 +7,26 @@ Aplikasi ini merupakan aplikasi kalkulator sederhana yang akan menerima dua inpu
 4. pada operasi pembagian, pembagi tidak boleh bernilai nol
    
 Jika validasi gagal maka sistem akan menampilkan pesan error lalu program berhenti.
+
+## Prerequisites
+1. Install java
+2. Install maven
+3. Install visual studio code
+
+## Run Code
+1. Clone repository dengan git
+   ```
+   git clone https://github.com/ameliadewi19/CalculatorApp
+   ```
+2. Buka projek melalui file explorer, lalu ketikan cmd pada kolom path
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/0d1af725-2f06-49df-a731-2ddb584b0f3d)
+3. Ketikan perintah dibawah untuk membuka vscode dengan path ini
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/d03f577d-eaa3-4f77-8498-7ed8b32c5e2e)
+4. Menginstall ekstensi java untuk mempermudah dalam running program
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/18aadf0d-d8e6-419d-96cf-106a77efc1cb)
+6. Klik kanan pada file src>main>java>com>calculator>MainApp.java, lalu tekan Run Java
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/bd774efa-4fca-4c9c-b02b-dbff4eac89c4)
+7. Masukan 2 angka yang dipisah spasi, lalu tekan enter
+9. Masukan operator yaitu +, -, * atau / lalu tekan enter
+    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/8dce75ac-ce93-4b87-88f6-94d3ae699988)
+ 
