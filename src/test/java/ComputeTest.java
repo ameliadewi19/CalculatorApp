@@ -36,7 +36,7 @@ public class ComputeTest {
         // Simulate user input for division by zero
         Compute.processOperation(a, b, operator);
 
-        assertTrue(getOutput().contains(expectedOutput));
+        assertTrue(getOutput().contains(expectedOutput), "Expected: " + expectedOutput + " Actual: " + getOutput());
     }
 
     @Test
@@ -48,7 +48,7 @@ public class ComputeTest {
 
         Compute.processOperation(a, b, operator);
 
-        assertTrue(getOutput().contains(expectedOutput));
+        assertTrue(getOutput().contains(expectedOutput), "Expected: " + expectedOutput + " Actual: " + getOutput());
     }
 
     @Test
@@ -60,7 +60,7 @@ public class ComputeTest {
 
         Compute.processOperation(a, b, operator);
 
-        assertTrue(getOutput().contains(expectedOutput));
+        assertTrue(getOutput().contains(expectedOutput), "Expected: " + expectedOutput + " Actual: " + getOutput());
     }
 
     @Test
@@ -72,7 +72,7 @@ public class ComputeTest {
 
         Compute.processOperation(a, b, operator);
 
-        assertTrue(getOutput().contains(expectedOutput));
+        assertTrue(getOutput().contains(expectedOutput), "Expected: " + expectedOutput + " Actual: " + getOutput());
     }
 
     @Test
@@ -84,6 +84,6 @@ public class ComputeTest {
 
         Compute.processOperation(a, b, operator);
 
-        assertTrue(getOutput().contains(expectedOutput));
+        assertTrue(getOutput().contains(expectedOutput), "Expected: " + expectedOutput + " Actual: " + getOutput());
     }
 }
