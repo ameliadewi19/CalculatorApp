@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ComputeTest" time="0.002" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="InputValidatorTesting" time="0.193" tests="9" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,8 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\ameli\AppData\Local\Temp\surefire11119949963013442337\surefirebooter11164257235178748731.jar C:\Users\ameli\AppData\Local\Temp\surefire11119949963013442337 2024-04-20T22-50-00_374-jvmRun1 surefire11370037018971437890tmp surefire_01462516143554117669tmp"/>
+    <property name="sun.java.command" value="C:\Users\ameli\AppData\Local\Temp\surefire9583686047519537328\surefirebooter9198040721528830764.jar C:\Users\ameli\AppData\Local\Temp\surefire9583686047519537328 2024-04-20T22-27-40_480-jvmRun1 surefire13112997219963354841tmp surefire_014509971625610112402tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="InputValidatorTesting"/>
     <property name="surefire.test.class.path" value="D:\Kuliah\Semester 6\PPL\Praktikum\Pertemuan 9\CalculatorApp\target\test-classes;D:\Kuliah\Semester 6\PPL\Praktikum\Pertemuan 9\CalculatorApp\target\classes;C:\Users\ameli\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\ameli\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ameli\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\ameli\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ameli\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\ameli\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ameli"/>
@@ -30,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ameli\AppData\Local\Temp\surefire11119949963013442337\surefirebooter11164257235178748731.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ameli\AppData\Local\Temp\surefire9583686047519537328\surefirebooter9198040721528830764.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -56,15 +57,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testMultiplication" classname="ComputeTest" time="0"/>
-  <testcase name="testAddition" classname="ComputeTest" time="0"/>
-  <testcase name="testDivisionByZero" classname="ComputeTest" time="0"/>
-  <testcase name="testDivision" classname="ComputeTest" time="0">
-    <failure message="Expected: Result: 3.33 Actual: Division by zero is not allowed.&#10; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Expected: Result: 3.33 Actual: Division by zero is not allowed.
- ==> expected: <true> but was: <false>
-	at ComputeTest.testDivision(ComputeTest.java:87)
+  <testcase name="testInvalidIntegerInput" classname="InputValidatorTesting" time="0.111"/>
+  <testcase name="testValidIntegerInput" classname="InputValidatorTesting" time="0.003"/>
+  <testcase name="testInvalidDivisionByZero" classname="InputValidatorTesting" time="0.013"/>
+  <testcase name="testInvalidOperatorColon" classname="InputValidatorTesting" time="0.001"/>
+  <testcase name="testNumberInRange" classname="InputValidatorTesting" time="0.012"/>
+  <testcase name="testNumberOutOfRangePositive" classname="InputValidatorTesting" time="0.001"/>
+  <testcase name="testNumberOutOfRangeNegative" classname="InputValidatorTesting" time="0.002"/>
+  <testcase name="testValidOperatorDivision" classname="InputValidatorTesting" time="0.002"/>
+  <testcase name="testValidDivisionNonZeroDivisor" classname="InputValidatorTesting" time="0.026">
+    <failure message="Expected result: true, but was: false for divisor: 5 with operator: &apos;/&apos; (should be a valid division). ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected result: true, but was: false for divisor: 5 with operator: '/' (should be a valid division). ==> expected: <true> but was: <false>
+	at InputValidatorTesting.testValidDivisionNonZeroDivisor(InputValidatorTesting.java:86)
 ]]></failure>
   </testcase>
-  <testcase name="testSubtraction" classname="ComputeTest" time="0"/>
 </testsuite>

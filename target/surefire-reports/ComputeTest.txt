@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ComputeTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.068 s <<< FAILURE! - in ComputeTest
-testDivision  Time elapsed: 0.015 s  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in ComputeTest
+testDivision  Time elapsed: 0 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Expected: Result: 3.33 Actual: Division by zero is not allowed.
  ==> expected: <true> but was: <false>

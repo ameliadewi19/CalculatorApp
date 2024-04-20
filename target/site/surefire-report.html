@@ -82,12 +82,12 @@ function toggleDisplay(elementId) {
 <th>Success Rate</th>
 <th>Time</th></tr>
 <tr class="b">
-<td align="left">12</td>
+<td align="left">25</td>
 <td align="left">0</td>
-<td align="left">1</td>
+<td align="left">3</td>
 <td align="left">0</td>
-<td align="left">91.667%</td>
-<td align="left">0.192</td></tr></table><br />
+<td align="left">88%</td>
+<td align="left">0.44</td></tr></table><br />
 <p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></section><section>
 <h2><a name="Package_List"></a>Package List</h2><a name="Package_List"></a>
 <p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br />
@@ -102,12 +102,12 @@ function toggleDisplay(elementId) {
 <th>Time</th></tr>
 <tr class="b">
 <td align="left"><a href="#"></a></td>
-<td align="left">12</td>
+<td align="left">25</td>
 <td align="left">0</td>
-<td align="left">1</td>
+<td align="left">3</td>
 <td align="left">0</td>
-<td align="left">91.667%</td>
-<td align="left">0.192</td></tr></table><br />
+<td align="left">88%</td>
+<td align="left">0.44</td></tr></table><br />
 <p>Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.</p><section>
 <h3></h3><a name=""></a>
 <table border="1" class="bodyTable">
@@ -121,6 +121,15 @@ function toggleDisplay(elementId) {
 <th>Success Rate</th>
 <th>Time</th></tr>
 <tr class="b">
+<td align="left"><a href="#.CalculatorTest"><figure><img src="images/icon_warning_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a href="#.CalculatorTest">CalculatorTest</a></td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">75%</td>
+<td align="left">0.147</td></tr>
+<tr class="a">
 <td align="left"><a href="#.ComputeTest"><figure><img src="images/icon_warning_sml.gif" alt="" /></figure></a></td>
 <td align="left"><a href="#.ComputeTest">ComputeTest</a></td>
 <td align="left">5</td>
@@ -128,7 +137,16 @@ function toggleDisplay(elementId) {
 <td align="left">1</td>
 <td align="left">0</td>
 <td align="left">80%</td>
-<td align="left">0.094</td></tr>
+<td align="left">0.002</td></tr>
+<tr class="b">
+<td align="left"><a href="#.InputValidatorTesting"><figure><img src="images/icon_warning_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a href="#.InputValidatorTesting">InputValidatorTesting</a></td>
+<td align="left">9</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">88.889%</td>
+<td align="left">0.193</td></tr>
 <tr class="a">
 <td align="left"><a href="#.MainAppTesting"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></a></td>
 <td align="left"><a href="#.MainAppTesting">MainAppTesting</a></td>
@@ -140,25 +158,57 @@ function toggleDisplay(elementId) {
 <td align="left">0.098</td></tr></table></section><br /></section><section>
 <h2><a name="Test_Cases"></a>Test Cases</h2><a name="Test_Cases"></a>
 <p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><section>
+<h3><a name="CalculatorTest"></a>CalculatorTest</h3><a name=".CalculatorTest"></a>
+<table border="1" class="bodyTable">
+<tr class="a">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_CalculatorTest.testMultiplication"></a>testMultiplication</td>
+<td align="left">0.088</td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_CalculatorTest.testAddition"></a>testAddition</td>
+<td align="left">0.002</td></tr>
+<tr class="a">
+<td align="left"><a href="#CalculatorTest.testDivision"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_CalculatorTest.testDivision"></a><a href="#CalculatorTest.testDivision">testDivision</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('CalculatorTest.testDivision');"><span style="display:inline;" id="CalculatorTest.testDivision-off"> + </span><span style="display:none;" id="CalculatorTest.testDivision-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.028</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">expected: &lt;6.67&gt; but was: &lt;6.666666666666667&gt;</td>
+<td align="left"></td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="CalculatorTest.testDivision-failure" style="display:none;">
+<div>
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;6.67&gt; but was: &lt;6.666666666666667&gt;
+	at CalculatorTest.testDivision(CalculatorTest.java:24)
+</pre></div></div></td>
+<td align="left"></td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_CalculatorTest.testSubtraction"></a>testSubtraction</td>
+<td align="left">0.001</td></tr></table></section><section>
 <h3><a name="ComputeTest"></a>ComputeTest</h3><a name=".ComputeTest"></a>
 <table border="1" class="bodyTable">
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ComputeTest.testMultiplication"></a>testMultiplication</td>
-<td align="left">0.058</td></tr>
+<td align="left">0</td></tr>
 <tr class="b">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ComputeTest.testAddition"></a>testAddition</td>
-<td align="left">0.001</td></tr>
+<td align="left">0</td></tr>
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ComputeTest.testDivisionByZero"></a>testDivisionByZero</td>
-<td align="left">0.002</td></tr>
+<td align="left">0</td></tr>
 <tr class="b">
 <td align="left"><a href="#ComputeTest.testDivision"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
 <td align="left"><a name="TC_ComputeTest.testDivision"></a><a href="#ComputeTest.testDivision">testDivision</a>
 <div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('ComputeTest.testDivision');"><span style="display:inline;" id="ComputeTest.testDivision-off"> + </span><span style="display:none;" id="ComputeTest.testDivision-on"> - </span>[ Detail ]</a></div></td>
-<td align="left">0.013</td></tr>
+<td align="left">0</td></tr>
 <tr class="a">
 <td align="left"></td>
 <td align="left">Expected: Result: 3.33 Actual: Division by zero is not allowed.
@@ -178,7 +228,59 @@ Expected: Result: 3.33 Actual: Division by zero is not allowed.
 <tr class="a">
 <td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
 <td align="left"><a name="TC_ComputeTest.testSubtraction"></a>testSubtraction</td>
-<td align="left">0.002</td></tr></table></section><section>
+<td align="left">0</td></tr></table></section><section>
+<h3><a name="InputValidatorTesting"></a>InputValidatorTesting</h3><a name=".InputValidatorTesting"></a>
+<table border="1" class="bodyTable">
+<tr class="a">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testInvalidIntegerInput"></a>testInvalidIntegerInput</td>
+<td align="left">0.111</td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testValidIntegerInput"></a>testValidIntegerInput</td>
+<td align="left">0.003</td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testInvalidDivisionByZero"></a>testInvalidDivisionByZero</td>
+<td align="left">0.013</td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testInvalidOperatorColon"></a>testInvalidOperatorColon</td>
+<td align="left">0.001</td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testNumberInRange"></a>testNumberInRange</td>
+<td align="left">0.012</td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testNumberOutOfRangePositive"></a>testNumberOutOfRangePositive</td>
+<td align="left">0.001</td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testNumberOutOfRangeNegative"></a>testNumberOutOfRangeNegative</td>
+<td align="left">0.002</td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_success_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="TC_InputValidatorTesting.testValidOperatorDivision"></a>testValidOperatorDivision</td>
+<td align="left">0.002</td></tr>
+<tr class="a">
+<td align="left"><a href="#InputValidatorTesting.testValidDivisionNonZeroDivisor"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></a></td>
+<td align="left"><a name="TC_InputValidatorTesting.testValidDivisionNonZeroDivisor"></a><a href="#InputValidatorTesting.testValidDivisionNonZeroDivisor">testValidDivisionNonZeroDivisor</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('InputValidatorTesting.testValidDivisionNonZeroDivisor');"><span style="display:inline;" id="InputValidatorTesting.testValidDivisionNonZeroDivisor-off"> + </span><span style="display:none;" id="InputValidatorTesting.testValidDivisionNonZeroDivisor-on"> - </span>[ Detail ]</a></div></td>
+<td align="left">0.026</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">Expected result: true, but was: false for divisor: 5 with operator: '/' (should be a valid division). ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</td>
+<td align="left"></td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="InputValidatorTesting.testValidDivisionNonZeroDivisor-failure" style="display:none;">
+<div>
+<pre>org.opentest4j.AssertionFailedError: Expected result: true, but was: false for divisor: 5 with operator: '/' (should be a valid division). ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at InputValidatorTesting.testValidDivisionNonZeroDivisor(InputValidatorTesting.java:86)
+</pre></div></div></td>
+<td align="left"></td></tr></table></section><section>
 <h3><a name="MainAppTesting"></a>MainAppTesting</h3><a name=".MainAppTesting"></a>
 <table border="1" class="bodyTable">
 <tr class="a">
@@ -214,15 +316,35 @@ Expected: Result: 3.33 Actual: Division by zero is not allowed.
 <table border="1" class="bodyTable">
 <tr class="a">
 <td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
-<td align="left"><a name="ComputeTest.testDivision"></a>testDivision</td></tr>
+<td align="left"><a name="CalculatorTest.testDivision"></a>testDivision</td></tr>
 <tr class="b">
 <td align="left"></td>
-<td align="left">org.opentest4j.AssertionFailedError: Expected: Result: 3.33 Actual: Division by zero is not allowed.
- ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</td></tr>
+<td align="left">org.opentest4j.AssertionFailedError: expected: &lt;6.67&gt; but was: &lt;6.666666666666667&gt;</td></tr>
 <tr class="a">
 <td align="left"></td>
 <td align="left">
-<div id="testDivision-failure">ComputeTest:87</div></td></tr></table><br /></section>
+<div id="testDivision-failure">CalculatorTest:24</div></td></tr>
+<tr class="b">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="ComputeTest.testDivision"></a>testDivision</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">org.opentest4j.AssertionFailedError: Expected: Result: 3.33 Actual: Division by zero is not allowed.
+ ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">
+<div id="testDivision-failure">ComputeTest:87</div></td></tr>
+<tr class="a">
+<td align="left"><figure><img src="images/icon_error_sml.gif" alt="" /></figure></td>
+<td align="left"><a name="InputValidatorTesting.testValidDivisionNonZeroDivisor"></a>testValidDivisionNonZeroDivisor</td></tr>
+<tr class="b">
+<td align="left"></td>
+<td align="left">org.opentest4j.AssertionFailedError: Expected result: true, but was: false for divisor: 5 with operator: '/' (should be a valid division). ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</td></tr>
+<tr class="a">
+<td align="left"></td>
+<td align="left">
+<div id="testValidDivisionNonZeroDivisor-failure">InputValidatorTesting:86</div></td></tr></table><br /></section>
       </div>
     </div>
     <div class="clear">
