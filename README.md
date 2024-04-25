@@ -1,26 +1,28 @@
 # CalculatorApp
 
-Aplikasi ini merupakan aplikasi kalkulator sederhana yang akan menerima dua input angka, lalu operator yang dipilih. Terdapat beberapa validasi yang dilakukan secara berurutan yaitu:
+Project ini merupakan aplikasi kalkulator sederhana yang akan menerima dua input angka, lalu operator yang dipilih. Terdapat beberapa validasi yang dilakukan secara berurutan yaitu:
 1. nilai yang dihitung harus angka, tidak boleh karakter
 2. angka yang dihitung berada pada range -32,768 hingga 32,767
 3. operator yang boleh diinputkan adalah +, -, * (kali) dan / (bagi)
 4. pada operasi pembagian, pembagi tidak boleh bernilai nol   
 Jika validasi gagal maka sistem akan menampilkan pesan error lalu program berhenti.
 
-Unit Testing aplikasi ini menggunakan pendekatan white box testing dengan automation testing menggunakan JUnit. Aplikasi ini dikembangkan dengan bahasa Java untuk kode program dan pembuatan script test dan Maven sebagai build tools.
+Unit Testing project ini menggunakan pendekatan white box testing dengan automation testing menggunakan JUnit. Project ini dikembangkan dengan bahasa Java untuk kode program dan pembuatan script test dan Maven sebagai build tools.
 
 ## Build With
-Automation Testing pada aplikasi ini menggunakan dua buah library.
+Automation Testing pada project ini menggunakan dua buah library.
  <ul>
     <li>JUnit</li>
     <li>assertion</li>
  </ul>
 
 # Getting Started
-## Prerequisites
-1. Install java
-2. Install maven
-3. Install visual studio code
+## Pre-requisites
+Sebelum menjalankan project ini, perlu disiapkan environment yang sesuai.
+<ul>
+ <li>Java 17+</li>
+ <li>Apache Maven 3.8.0+</li>
+</ul>
 
 ## Run Code
 1. Clone repository dengan git
