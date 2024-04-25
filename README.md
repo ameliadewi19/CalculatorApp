@@ -41,6 +41,34 @@ Sebelum menjalankan project ini, perlu disiapkan environment yang sesuai.
 7. Masukan operator yaitu +, -, * atau / lalu tekan enter
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/8dce75ac-ce93-4b87-88f6-94d3ae699988)
 
+## Struture Project Test
+Berikut ini merupakan struktur kode beserta penjelasannya
+```
+{nama proyek}
+  src
+    main
+      java
+        com
+          calculator
+            Calculator.java
+            Compute.java
+            InputValidator.java
+            MainApp.java
+    test
+      java
+        CalculatorTest.java
+        ComputeTest.java
+        InputValidatorTesting.java
+        MainAppTesting.java
+  target
+```
+- package calculator berisi semua source code setiap fitur
+* class Calculator berisi operasi penjumlahan, pengurangan, perkalian dan pembagian
+* class Compute berisi proses yang menjalankan suatu operasi sesuai jenis operator dengan memanggil class Calculator
+* class InputValidator berisi proses validasi yang terdiri dari pengecekan input operan adalah bilangan integer dan di dalam range, pengecekan operator yang valid dan pembagian dengan 0
+* class MainApp merupakan main program 
+- package test berisi script test dari semua fitur  
+
 ## Run Automation Test
 1. Jalankan perintah berikut pada terminal
    ```
