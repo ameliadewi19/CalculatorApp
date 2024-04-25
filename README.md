@@ -99,7 +99,7 @@ Berikut ini merupakan struktur kode beserta penjelasannya
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/c49dcf83-5395-4d8a-8a4c-776f2f881aa4)
 
 ## Test Cases
-Pembuatan test case meliputi test positif dan negatif untuk setiap modul yang ada di tiap class.
+Pembuatan test case meliputi test positif dan negatif untuk setiap modul yang ada di tiap class. Pengujian unit testing ini menggunakan teknik white box testing dengan metode path testing untuk setiap modul.
 
 #### MainAppTest.java
 ```
