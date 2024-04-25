@@ -75,8 +75,7 @@ Berikut ini merupakan struktur kode beserta penjelasannya
    mvn test
    ```
    Berikut merupakan hasil dari perintah di atas
-   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/03f0ce80-ccbe-490e-bf05-29af434b5e8e)
-   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95154453/ad7fc33f-93e9-4365-9000-b680a1d6f336)
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95154453/5070c0de-f45c-4b63-8ae9-415f64d51076)
 
    Untuk menjalankan test pada satu class test saja, jalankan perintah berikut
    ```
@@ -98,3 +97,51 @@ Berikut ini merupakan struktur kode beserta penjelasannya
    ```
 4. Buka hasil report pada target>site>surefire-report.html pada browser
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/c49dcf83-5395-4d8a-8a4c-776f2f881aa4)
+
+## Test Cases
+Pembuatan test case meliputi test positif dan negatif untuk setiap modul yang ada di tiap class.
+
+#### MainAppTest.java
+```
+1. Pemeriksaan kondisi input 1 buah operand angka dan 1 buah operand huruf
+2. Pemeriksaan kondisi input 1 buah operand angka dan 1 buah operand karakter khusus/simbol
+3. Pemeriksaan kondisi input 1 buah operand angka dalam range integer dan 1 buah operand angka dibawah batas bawah range integer
+4. Pemeriksaan kondisi input 1 buah operand angka dalam range integer dan 1 buah operand angka diatas batas atas range integer
+5. Pemeriksaan kondisi input operand valid dan operator karakter khusus selain (+, -, /, *)
+6. Pemeriksaan kondisi input operand valid dan operator selain karakter khusus
+7. Pemeriksaan kondisi input operand valid dan operator valid 
+```
+#### InputValidatorTest.java
+```
+1. Pemeriksaan nilai operand integer
+2. Pemeriksaan nilai operand selain integer
+3. Pemeriksaan nilai operand di bawah batas bawah nilai integer
+4. Pemeriksaan nilai operand di atas batas atas nilai integer
+5. Pemeriksaan nilai operand di dalam range nilai integer
+6. Pemeriksaan nilai operator yang sesuai (+, -, /, *)
+7. Pemeriksaan nilai operator yang tidak sesuai (+, -, /, *)
+8. Pemeriksaan pembagian dengan bilangan 0
+9. Pemeriksaan pembagian dengan bilangan bukan 0
+```
+#### ComputeTest.java
+```
+1. Pemeriksaan kondisi input penyebut 0 untuk operator pembagian
+2. Pemeriksaan kondisi operator penjumlahan
+3. Pemeriksaan kondisi operator pengurangan
+4. Pemeriksaan kondisi operator perkalian
+5. Pemeriksaan kondisi operator pembagian dengan penyebut > 0
+```
+#### CalculatorTest.java
+```
+1. Pemeriksaan hasil operasi tambah
+2. Pemeriksaan hasil operasi kurang
+3. Pemeriksaan hasil operasi kali
+4. Pemeriksaan hasil operasi bagi
+```
+
+## Author
+[Amelia Dewi Agustiani](https://github.com/ameliadewi19) (211524002)
+
+[Salsabila Maharani Putri](https://github.com/salsabilamp3) (211524026)
+
+_Mahasiswa D4 Teknik Informatika Politeknik Negeri Bandung_
