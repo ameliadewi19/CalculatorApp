@@ -4,10 +4,19 @@ Aplikasi ini merupakan aplikasi kalkulator sederhana yang akan menerima dua inpu
 1. nilai yang dihitung harus angka, tidak boleh karakter
 2. angka yang dihitung berada pada range -32,768 hingga 32,767
 3. operator yang boleh diinputkan adalah +, -, * (kali) dan / (bagi)
-4. pada operasi pembagian, pembagi tidak boleh bernilai nol
-   
+4. pada operasi pembagian, pembagi tidak boleh bernilai nol   
 Jika validasi gagal maka sistem akan menampilkan pesan error lalu program berhenti.
 
+Unit Testing aplikasi ini menggunakan pendekatan white box testing dengan automation testing menggunakan JUnit. Aplikasi ini dikembangkan dengan bahasa Java untuk kode program dan pembuatan script test dan Maven sebagai build tools.
+
+## Build With
+Automation Testing pada aplikasi ini menggunakan dua buah library.
+ <ul>
+    <li>JUnit</li>
+    <li>assertion</li>
+ </ul>
+
+# Getting Started
 ## Prerequisites
 1. Install java
 2. Install maven
