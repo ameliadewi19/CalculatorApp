@@ -63,10 +63,10 @@ Berikut ini merupakan struktur kode beserta penjelasannya
   target
 ```
 - package calculator berisi semua source code setiap fitur
-* class Calculator berisi operasi penjumlahan, pengurangan, perkalian dan pembagian
-* class Compute berisi proses yang menjalankan suatu operasi sesuai jenis operator dengan memanggil class Calculator
-* class InputValidator berisi proses validasi yang terdiri dari pengecekan input operan adalah bilangan integer dan di dalam range, pengecekan operator yang valid dan pembagian dengan 0
-* class MainApp merupakan main program 
+- class Calculator berisi operasi penjumlahan, pengurangan, perkalian dan pembagian
+- class Compute berisi proses yang menjalankan suatu operasi sesuai jenis operator dengan memanggil class Calculator
+- class InputValidator berisi proses validasi yang terdiri dari pengecekan input operan adalah bilangan integer dan di dalam range, pengecekan operator yang valid dan pembagian dengan 0
+- class MainApp merupakan main program 
 - package test berisi script test dari semua fitur  
 
 ## Run Automation Test
