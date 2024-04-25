@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ComputeTest" time="0.12" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MainAppTest" time="0.164" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="E:\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\salsa\AppData\Local\Temp\surefire439216451409244370\surefirebooter16937586547252615206.jar C:\Users\salsa\AppData\Local\Temp\surefire439216451409244370 2024-04-25T20-56-35_826-jvmRun1 surefire9167389178882433940tmp surefire_010152890924604442258tmp"/>
+    <property name="sun.java.command" value="C:\Users\salsa\AppData\Local\Temp\surefire1780907839484109263\surefirebooter12445896498884437872.jar C:\Users\salsa\AppData\Local\Temp\surefire1780907839484109263 2024-04-25T20-55-56_878-jvmRun1 surefire3540984901961770579tmp surefire_017515781644262450520tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="ComputeTest"/>
+    <property name="test" value="MainAppTest"/>
     <property name="surefire.test.class.path" value="D:\KULIAH\SEMESTER6\Testing\Week 9\CalculatorApp\target\test-classes;D:\KULIAH\SEMESTER6\Testing\Week 9\CalculatorApp\target\classes;C:\Users\salsa\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\salsa\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\salsa\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\salsa\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\salsa\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\salsa\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\salsa"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\salsa\AppData\Local\Temp\surefire439216451409244370\surefirebooter16937586547252615206.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\salsa\AppData\Local\Temp\surefire1780907839484109263\surefirebooter12445896498884437872.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -57,15 +57,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testMultiplication" classname="ComputeTest" time="0.076"/>
-  <testcase name="testAddition" classname="ComputeTest" time="0.003"/>
-  <testcase name="testDivisionByZero" classname="ComputeTest" time="0.002"/>
-  <testcase name="testDivision" classname="ComputeTest" time="0.016">
-    <failure message="Expected: Result: 3.33 Actual: Division by zero is not allowed.&#10; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Expected: Result: 3.33 Actual: Division by zero is not allowed.
- ==> expected: <true> but was: <false>
-	at ComputeTest.testDivision(ComputeTest.java:87)
-]]></failure>
-  </testcase>
-  <testcase name="testSubtraction" classname="ComputeTest" time="0.002"/>
+  <testcase name="testCaseWithInvalidNumberInput" classname="MainAppTest" time="0.116"/>
+  <testcase name="testCaseWithNumberOutOfRange" classname="MainAppTest" time="0.002"/>
+  <testcase name="testCaseWithInvalidOperator" classname="MainAppTest" time="0.001"/>
+  <testcase name="testCaseWithLiteralOperator" classname="MainAppTest" time="0.001"/>
+  <testcase name="testCaseWithOutOfRangeInput" classname="MainAppTest" time="0.004"/>
+  <testcase name="testCaseWithInvalidFirstInput" classname="MainAppTest" time="0.002"/>
+  <testcase name="testCaseContinuesToProcessOperation" classname="MainAppTest" time="0.017"/>
 </testsuite>

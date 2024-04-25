@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
-Test set: InputValidatorTesting
+Test set: InputValidatorTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.14 s <<< FAILURE! - in InputValidatorTesting
-testValidDivisionNonZeroDivisor  Time elapsed: 0.016 s  <<< FAILURE!
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.124 s <<< FAILURE! - in InputValidatorTest
+testValidDivisionNonZeroDivisor  Time elapsed: 0.011 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected result: true, but was: false for divisor: 5 with operator: '/' (should be a valid division). ==> expected: <true> but was: <false>
-	at InputValidatorTesting.testValidDivisionNonZeroDivisor(InputValidatorTesting.java:86)
+	at InputValidatorTest.testValidDivisionNonZeroDivisor(InputValidatorTest.java:88)
 
