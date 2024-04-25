@@ -58,8 +58,8 @@ Berikut ini merupakan struktur kode beserta penjelasannya
       java
         CalculatorTest.java
         ComputeTest.java
-        InputValidatorTesting.java
-        MainAppTesting.java
+        InputValidatorTest.java
+        MainAppTest.java
   target
 ```
 - package calculator berisi semua source code setiap fitur
@@ -70,14 +70,31 @@ Berikut ini merupakan struktur kode beserta penjelasannya
 - package test berisi script test dari semua fitur  
 
 ## Run Automation Test
-1. Jalankan perintah berikut pada terminal
+1. Jalankan perintah berikut pada terminal untuk menjalankan semua test
    ```
    mvn test
    ```
+   Berikut merupakan hasil dari perintah di atas
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/03f0ce80-ccbe-490e-bf05-29af434b5e8e)
-2. Untuk melihat hasil report testing jalankan perintah berikut pada terminal
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95154453/ad7fc33f-93e9-4365-9000-b680a1d6f336)
+
+   Untuk menjalankan test pada satu class test saja, jalankan perintah berikut
+   ```
+   mvn test -Dtest=NamaFileTest
+   ```
+   Berikut merupakan hasil dari perintah di atas
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95154453/2220c268-93e4-4a45-9ea7-872867e08434)
+
+   Untuk menjalankan satu method test saja, jalankan perintah berikut
+   ```
+   mvn test -Dtest=NamaFileTest#NamaMethod
+   ```
+   Berikut merupakan hasil dari perintah di atas
+   ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95154453/51848381-3e52-424c-8eb2-21140fdb0bd0)
+
+3. Untuk melihat hasil report testing jalankan perintah berikut pada terminal
    ```
    mvn site
    ```
-3. Buka hasil report pada target>site>surefire-report.html pada browser
+4. Buka hasil report pada target>site>surefire-report.html pada browser
    ![image](https://github.com/ameliadewi19/CalculatorApp/assets/95133748/c49dcf83-5395-4d8a-8a4c-776f2f881aa4)
